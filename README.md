@@ -8,5 +8,26 @@ Imagine staring at a test question you don't know the answer to.Imagine a girl t
 ![Oled_AI pic]()
 
 # How it works
-- Button press puts Raspberry Pi into the "listening state". Raspberry Pi records audio locally in the souddevice library. Raspberry Pi sends the .wav file to OpenAI's Whisper model to convert speech into text.
+- Initial button press puts Raspberry Pi into the "listening state". Raspberry Pi records audio locally in the sounddevice library via an external microphone.
+- Raspberry Pi sends the .wav file to OpenAI's Whisper model to convert speech into text.
 - Pressing the button again enters the Raspberry Pi into the "thinking state" where the Raspberry Pi sends the text to OpenAI's language model via API.
+- OpenAI API's generates a response, which the Raspberry Pi formats then displays on the external OLED screen.
+
+# Hardware Used
+- Raspberry Pi 4 or 5 (capable audio capture and API communication)
+- External Microphone (USB or bluetooth)
+- Tactile Button/Switch (toggling listening and response states)
+- OLED display (text output)
+
+# Software Used
+- Python 3
+- Raspberry Pi OS
+- sounddevice (audio recording)
+- NumPy & SciPy (audio processing and .WAV file handling
+- OpenAI Whisper (speech-to-text)
+- OpenAI LLM (response generation)
+- luma.oled (OLED display driver)
+- gpiozero (button control)
+
+
+
