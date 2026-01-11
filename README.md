@@ -29,5 +29,7 @@ Imagine staring at a test question you don't know the answer to.Imagine a girl t
 - luma.oled (OLED display driver)
 - gpiozero (button control)
 
-
+# Disclaimer
+This project is for educational and experimental purposes only.
+The author is not responsible for misuse or unsafe implementations.
 
